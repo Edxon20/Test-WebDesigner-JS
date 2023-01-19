@@ -1,8 +1,35 @@
+*{
+    font-family: 'Lucida Grande', Verdana, Arial, sans-serif;
+    color: rgb(79,79,79);
+}
+
+
+#review-container{
+    display: flex;
+    justify-content: center;
+
+}
+
 .card {
     width: 200px;
     height: 290px;
     border-radius: 10px;
     box-shadow: rgba(50,50,50,0.25) 0px 6px 12px -2px, rgba(0,0,0,0.3) 0 3px 7pc -3px;
     text-align: center;
+    display: flex;
+    align-items: center;
     
+}
+
+.card .image-container{
+    width: 90px;
+    height: 90px;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.card .image-container img{
+    height: 100%;
+    
+
 }
