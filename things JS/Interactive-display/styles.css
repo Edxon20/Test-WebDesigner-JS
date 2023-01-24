@@ -17,8 +17,24 @@
     box-shadow: rgba(50,50,50,0.25) 0px 6px 12px -2px, rgba(0,0,0,0.3) 0 3px 7pc -3px;
     text-align: center;
     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
     align-items: center;
+    opacity: 0.3;
+    transform: scale3d(0.8, 0.8, 1);
+    transition: all 0.3s ease-in-out;
     
+}
+
+.card p{
+    padding: 22px 20px;
+}
+
+.active {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+    transition: all 0.3s ease-in-out;
 }
 
 .card .image-container{
@@ -31,5 +47,16 @@
 .card .image-container img{
     height: 100%;
     
+
+}
+
+.card .name-container{
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(231, 208, 253);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+
 
 }
